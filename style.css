@@ -489,25 +489,27 @@ tr:nth-child(odd){
     font-size: 20px;
     font-weight: 500; 
   }
-  .contact_form input{
+  .contact_form textarea{
     background-color:#e8ebff;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     width:200px;
-    height: 20px;
-    padding:10px
+    height: 25px;
+    padding: 10px;
+  }
+.mess textarea{
+    background-color:#e8ebff;
+    border: 1px solid black;
+    border-radius: 20px;
+    width:330px;
+    height: 150px;
+    padding: 10px;
   }
   .mess{
     font-size: 20px;
     font-weight: 500; 
   }
-  .mess input{
-    background-color:#e8ebff;
-    border: 1px solid black;
-    border-radius: 10px;
-    width:400px;
-    height:150px;
-  }
+ 
   
   .submit input{
     background-color: #c5cefe;
