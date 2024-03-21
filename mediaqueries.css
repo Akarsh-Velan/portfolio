@@ -7,7 +7,7 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #experience {
     height: fit-content;
   }
 }
@@ -27,9 +27,7 @@
   .section-container {
     display: block;
   }
-  .arrow {
-    display: none;
-  }
+  
   section,
   .section-container {
     height: fit-content;
