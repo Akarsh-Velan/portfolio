@@ -534,6 +534,7 @@ tr:nth-child(odd){
   font-weight: 500;
 }
 
+/* Animations */
 
 .section__text__p1_1, .title_t, .section__text__p2, .btn-color-2, .btn-color-1 {
   position: relative;
@@ -553,8 +554,6 @@ tr:nth-child(odd){
   animation-delay: 2.5s; 
 }
 
-
-
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -565,6 +564,8 @@ tr:nth-child(odd){
     transform: translateY(0);
   }
 }
+/**/
+
 
 .btn-color-2, .btn-color-1 {
   position: relative;
@@ -590,6 +591,7 @@ tr:nth-child(odd){
     transform: translateY(0);
   }
 }
+/**/
 
 
 
@@ -598,7 +600,6 @@ tr:nth-child(odd){
   opacity: 0;
   animation: slideUp2 0.8s forwards;
 }
-
 
 .icon:nth-child(1) {
   animation-delay: 4.0s; 
@@ -623,20 +624,73 @@ tr:nth-child(odd){
     transform: translateY(0);
   }
 }
+/**/
 
 
+.section__pic-container {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn{
+  0% { opacity: 0;}
+  100% {opacity: 1;}
+}
+/**/
 
 
+.desktop-nav, .logo{
+  position: relative;
+  opacity: 0;
+  animation: slideDown1 1s forwards;
+}
 
+.logo:nth-child(1) {
+  animation-delay: 1.5s; 
+}
 
+@keyframes slideDown1 {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/**/
 
+#desktop-nav{
+  position: relative;
+}
 
+.navdown{
+  opacity: 0;
+  animation: slideDown2 1s forwards;
+}
+.navdown:nth-child(1){
+  animation-delay: 2s; 
+}
+.navdown:nth-child(2){
+  animation-delay: 2.2s; 
+}
+.navdown:nth-child(3){
+  animation-delay: 2.4s; 
+}
+.navdown:nth-child(4){
+  animation-delay: 2.6s; 
+}
 
-
-
-
-
-
+@keyframes slideDown2{
+  from{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
