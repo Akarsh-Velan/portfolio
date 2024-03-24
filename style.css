@@ -172,7 +172,7 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
+.section__pic-container,.section__pic-container_1 {
   display: flex;
   height: 400px;
   width: 400px;
@@ -330,7 +330,7 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
+.section__pic-container, .section__pic-container_1 {
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -627,8 +627,8 @@ tr:nth-child(odd){
 /**/
 
 
-.section__pic-container {
-  animation: fadeIn 5s;
+.section__pic-container_1 {
+  animation: fadeIn 4s;
 }
 
 @keyframes fadeIn{
