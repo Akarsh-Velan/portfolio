@@ -49,6 +49,9 @@
   .section__text__p2 {
     font-size: 1.75rem;
   }
+  .circle {
+    left: calc(150px);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -121,7 +124,9 @@
   footer nav .nav-links-container a{
     font-size: 25px;
   }
-  
+  .circle {
+    left: calc(150px);
+  }
 }
 
 @media only screen and (max-width: 580px) {
