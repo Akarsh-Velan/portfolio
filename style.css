@@ -735,42 +735,6 @@ tr:nth-child(odd){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 nav ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -820,6 +784,59 @@ a:hover::after {
   color:#000000;
   width: 100%;
 }
+
+
+#profile {
+  position: relative;
+  margin: 50px auto;
+}
+
+.section__pic-container_1 {
+  position: relative;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  animation: rotate 5s linear infinite;
+}
+
+.circle {
+  width: 20px; 
+  height: 20px;
+  background-color: black;
+  border-radius: 20%;
+  position: absolute;
+  top: -10px;
+  left: calc(200px);
+  animation: followOrbit 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes followOrbit {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
 
 
 
@@ -879,53 +896,3 @@ a:hover::after {
 */
 
 
-
-#profile {
-  position: relative;
-  margin: 50px auto;
-}
-
-.section__pic-container_1 {
-  position: relative;
-}
-
-img {
-  border-radius: 50%;
-}
-
-.orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-  animation: rotate 5s linear infinite; /* Adjust duration as needed */
-}
-
-.circle {
-  width: 20px; /* Adjust this value as needed */
-  height: 20px; /* Adjust this value as needed */
-  background-color: black;
-  border-radius: 20%;
-  position: absolute;
-  top: -10px; /* Adjust this value based on circle size */
-  left: calc(200px); /* Adjust this value based on the desired orbit radius */
-  animation: followOrbit 5s linear infinite; /* Adjust duration as needed */
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes followOrbit {
-  0% {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
-  }
-}
