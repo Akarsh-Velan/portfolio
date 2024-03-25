@@ -52,6 +52,14 @@
   .circle {
     left: calc(150px);
   }
+
+  .orbit,.circle{
+    z-index: 1;
+  }
+  .hamburger-menu{
+    z-index: 2;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
